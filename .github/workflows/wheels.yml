@@ -32,7 +32,7 @@ jobs:
           pip install build wheel
 
       - name: Build wheel
-        run: python -m build --wheel --output-dir wheelhouse
+        run: python -m build --wheel --outdir wheelhouse
 
       - uses: actions/upload-artifact@v3
         with:
