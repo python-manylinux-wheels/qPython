@@ -28,7 +28,6 @@ jobs:
       - name: Build wheels
         env:
           CIBW_BUILD: "cp311-manylinux_x86_64"
-          CIBW_BEFORE_BUILD_LINUX: "bash .github/workflows/scripts/build_setup.sh"
         run: python -m cibuildwheel --output-dir wheelhouse
 
       - uses: actions/upload-artifact@v3
